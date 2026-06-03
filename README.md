@@ -5,6 +5,8 @@ This repository is based on the original implementation from [Physical-Intellige
 ## Installation
 
 ```bash
+# Clone Kinetix submodule
+git submodule update --init
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 # Install dependencies
