@@ -1,0 +1,22 @@
+defaults:
+  - env: entity
+  - env_size: l
+  - learning:
+    - ppo-base
+    - ppo-rnn
+  - misc: misc
+  - model:
+    - model-base
+    - model-transformer
+  - _self_
+
+seed: 0
+upscale: 2
+downscale: 1
+fps: 60
+debug: true
+
+env:
+  frame_skip: 1
+
+agent_taking_actions: false

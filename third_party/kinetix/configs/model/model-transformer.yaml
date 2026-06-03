@@ -1,0 +1,6 @@
+transformer_depth: 2
+transformer_size: 16
+transformer_encoder_size: 128
+num_heads: 8
+full_attention_mask: false
+aggregate_mode: dummy_and_mean

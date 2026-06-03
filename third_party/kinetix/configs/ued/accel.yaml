@@ -1,0 +1,16 @@
+use_accel: true
+exploratory_grad_updates: true
+num_edits: 5
+score_function: MaxMC
+level_buffer_capacity: 4000
+replay_prob: 0.5
+staleness_coeff: 0.3
+temperature: 1.0
+topk_k: 8
+minimum_fill_ratio: 0.5
+prioritization: rank
+buffer_duplicate_check: false
+buffer_train: false
+mode: train
+checkpoint_directory: checkpoints/physicsenv/ued
+max_number_of_checkpoints: 5

@@ -1,0 +1,9 @@
+"sampled_envs_ratio": 0.5
+"batch_size": 4096
+"num_batches": 3
+"rollout_steps": 512
+"num_to_save": 1024
+
+log_learnability_before_after: false
+put_eval_levels_in_buffer: false
+save_learnability_buffer_pickle: false

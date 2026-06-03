@@ -1,0 +1,13 @@
+eval_levels:
+  [
+        "l/mjc_half_cheetah",
+        "l/mjc_half_cheetah_easy",
+        "l/mjc_hopper",
+        "l/mjc_hopper_easy",
+        "l/mjc_swimmer",
+        "l/mjc_walker",
+        "l/mjc_walker_easy",
+  ]
+eval_num_attempts: 10
+eval_freq: 10
+EVAL_ON_SAMPLED: false

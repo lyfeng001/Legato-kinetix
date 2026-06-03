@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "real-time-chunking-kinetix"
+version = "0.0.1"
+authors = [
+  { name="Kevin Black", email="kevin@physicalintelligence.company" }
+]
+description = ""
+requires-python = ">=3.11"
+dependencies = [
+    "jax[cuda12]==0.4.35",
+    "numpy==1.26.4",
+    "tyro",
+    "einops",
+    "pandas",
+    "tqdm-loggable",
+    "kinetix",
+]
+
+
+[tool.ruff]
+line-length = 120
+
+[tool.uv.sources]
+kinetix = { path = "third_party/kinetix", editable = true }
+
+[tool.ruff.lint.isort]
+force-single-line = true
+force-sort-within-sections = true
+single-line-exclusions = ["collections.abc", "typing", "typing_extensions"]
+known-third-party = ["wandb"]

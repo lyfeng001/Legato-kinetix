@@ -1,0 +1,2 @@
+num_steps: 64
+outer_rollout_steps: 4

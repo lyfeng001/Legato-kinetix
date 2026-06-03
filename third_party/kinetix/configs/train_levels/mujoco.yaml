@@ -1,0 +1,11 @@
+train_level_mode: list
+train_levels_list:
+  [
+        "l/mjc_half_cheetah",
+        "l/mjc_half_cheetah_easy",
+        "l/mjc_hopper",
+        "l/mjc_hopper_easy",
+        "l/mjc_swimmer",
+        "l/mjc_walker",
+        "l/mjc_walker_easy",
+  ]
