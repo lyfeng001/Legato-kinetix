@@ -1,4 +1,0 @@
-fc_layer_depth: 5
-fc_layer_width: 128
-activation: "tanh"
-recurrent_model: False
