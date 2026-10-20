@@ -281,7 +281,7 @@ class FlowPolicy(nnx.Module):
         kappa = (1.0 - w) / dt 
         time_expanded = time[:, None, None]
         x_t = (1 - time_expanded) * noise + time_expanded * action
-        u_t = (action - noise) * (1.0 + kappa * (1 - time_expanded))
+        u_t = (action - noise) * (1.0 - kappa * (1 - time_expanded))
         guided_x_t = (1.0 - w) * action + w * x_t
         guided_x_t_with_weight = jnp.concatenate([guided_x_t, w], axis=-1)
         pred = self(obs, guided_x_t_with_weight, time)
